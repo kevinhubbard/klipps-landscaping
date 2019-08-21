@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import Instructions from './Instructions'
+import Navbar from './navbar'
+import Main from './main'
 
-class Test extends React.Component {
+class App extends Component {
 	render() {
-		return  <div id='top'>
-					<Instructions/>
+		return  <div>
+					<Navbar/>
+					<Main/>
 				</div>
 	}
 }
 
-ReactDOM.render(<Test name='fuck'/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
