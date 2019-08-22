@@ -13,7 +13,7 @@ class App extends Component {
 						<Navbar/>
 						<Main/>
 						<div className='push'></div>
-						<img src='/images/1.jpg' />
+						<img src='../public/images/1.jpg' />
 					</div>
 					<Footer/>
 				</div>
