@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
 import About from './about'
 import Contact from './contact'
+import Gallery from './gallery'
 
 import './styles/main.css'
 
@@ -10,6 +10,7 @@ class Main extends Component {
 		return  <div id='main'>
 					<About/>
 					<Contact/>
+					<Gallery/>
 				</div>
 	}
 }

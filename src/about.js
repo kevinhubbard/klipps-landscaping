@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
 import './styles/about.css'
 
 const services = ['Lawn mowing', 'Tree trimming', 'Weeding or Fertilizing', 'Landscape/Garden Designs and maintenance']
