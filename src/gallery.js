@@ -7,16 +7,16 @@ class Gallery extends Component {
 	render() {
 		const images = [
 			{
-				original: '../public/images/1.jpg'
+				original: '/images/1.jpg'
 			},
 			{
-				original: './images/2.jpg'
+				original: '/images/2.jpg'
 			},
 			{
-				original: './images/3.jpg'
+				original: '/images/3.jpg'
 			},
 			{
-				original: './images/4.jpg'
+				original: '/images/4.jpg'
 			},
 			{
 				original: '/images/5.jpg'
