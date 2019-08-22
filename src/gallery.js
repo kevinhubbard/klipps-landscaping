@@ -48,7 +48,8 @@ class Gallery extends Component {
 			{
 				original: '/images/14.jpg'
 			}]
-		return  <ImageGallery className='gallery' items={images}/>
+		return  <ImageGallery className='gallery' items={images}>
+				</ImageGallery>
 	}
 }
 
