@@ -2,51 +2,80 @@ import React, {Component} from 'react'
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css";
 import './styles/gallery.css'
+import One from './images/1.jpg'
+import two from './images/2.jpg'
+import three from './images/3.jpg'
+import four from './images/4.jpg'
+import five from './images/5.jpg'
+import six from './images/6.jpg'
+import seven from './images/7.jpg'
+import eight from './images/8.jpg'
+import nine from './images/9.jpg'
+import ten from './images/10.jpg'
+import eleven from './images/11.jpg'
+import twelve from './images/12.jpg'
+import thirteen from './images/13.jpg'
+import fourteen from './images/14.jpg'
+
 
 class Gallery extends Component {
 	render() {
 		const images = [
 			{
-				original: '../public/images/1.jpg'
+				original: One,
+				thumbnail: One
 			},
 			{
-				original: '/images/2.jpg'
+				original: two,
+				thumbnail: two
 			},
 			{
-				original: '/images/3.jpg'
+				original: three,
+				thumbnail: three
 			},
 			{
-				original: '/images/4.jpg'
+				original: four,
+				thumbnail: four
 			},
 			{
-				original: '/images/5.jpg'
+				original: five,
+				thumbnail: five
 			},
 			{
-				original: '/images/6.jpg'
+				original: six,
+				thumbnail: six
 			},
 			{
-				original: '/images/7.jpg'
+				original: seven,
+				thumbnail: seven
 			},
 			{
-				original: '/images/8.jpg'
+				original: eight,
+				thumbnail: eight
 			},
 			{
-				original: '/images/9.jpg'
+				original: nine,
+				thumbnail: nine
 			},
 			{
-				original: '/images/10.jpg'
+				original: ten,
+				thumbnail: ten
 			},
 			{
-				original: '/images/11.jpg'
+				original: eleven,
+				thumbnail: eleven
 			},
 			{
-				original: '/images/12.jpg'
+				original: twelve,
+				thumbnail: twelve
 			},
 			{
-				original: '/images/13.jpg'
+				original: thirteen,
+				thumbnail: thirteen
 			},
 			{
-				original: '/images/14.jpg'
+				original: fourteen,
+				thumbnail: fourteen
 			}]
 		return  <ImageGallery className='gallery' items={images}>
 				</ImageGallery>

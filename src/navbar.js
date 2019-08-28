@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import './styles/navbar.css'
+import logo from './images/logo.png'
 
 class Navbar extends Component {
 	render() {
 		return <div className='nav'>
 					<nav>
-						<h2 id='logo'><img src='/images/logo.png' />Klipps Landscaping</h2>
+						<h2 id='logo'><img src={logo} />Klipps Landscaping</h2>
 					</nav>
 				</div>
 	}
