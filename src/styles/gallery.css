@@ -1,13 +1,6 @@
-.image-gallery {
-	width: 950px;
+.carousel{
+	width: 500px;
 	height: auto;
 	margin: 0 auto;
-}
-.image-gallery-slide img {
-	width: 500px;
-	height: 500px;
-}
-
-.gallery{
-	border: 5px solid green;
+	margin-bottom: 10px;
 }
