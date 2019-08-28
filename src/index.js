@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Navbar from './navbar'
 import Main from './main'
 import Footer from './footer.js'
+import 'bootstrap/dist/css/bootstrap.css'
 import './styles/index.css'
 
 
