@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css";
 import './styles/gallery.css'
-import One from './images/1.jpg'
+import One from './images/one.jpg'
 import two from './images/2.jpg'
 import three from './images/3.jpg'
 import four from './images/4.jpg'
