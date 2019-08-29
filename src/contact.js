@@ -3,29 +3,31 @@ import './styles/contact.css'
 
 class Contact extends Component {
 	render() {
-		return  <form id='contact' action='mailto:dgkallday98@gmail.com' method='post' enctype='text/plain'>
+		return  <form id='contact'>
+					<h4>Contact Us</h4>
 					<div className='form-group'>
-						<label for='name'>Name:</label>
-						<input type='text' className='form-control' id='name'></input>
+						<input type='text' className='form-control' id='name' placeholder='Name:'></input>
 					</div>
 					<div className='form-group'>
-						<label for='email'>Email:</label>
-						<input type='text' className='form-control' id='email'></input>
+						<input type='text' className='form-control' id='email' placeholder='Email:'></input>
 					</div>
-					<p id='services'>Services:</p>
-						<br/>
 					
 					<div className='form-check form-check-inline'>
 
-						<label className='form-check-label' for='mow'>Mowing: </label>
+						
 						<input id='mow' className='form-check-input' type='checkbox' value='mow'/>
-						<label className='form-check-label' for='scape'>Landscaping: </label>
+						<label className='form-check-label' for='mow'>Mowing</label>
+
+						
 						<input id='scape' className='form-check-input' type='checkbox' value='scape'/>
-						<label className='form-check-label' for='other'>Other: </label>
+						<label className='form-check-label' for='scape'>Landscaping</label>
+						
 						<input id='other' className='form-check-input' type='checkbox' value='other'/>
+						<label className='form-check-label' for='other'>Other</label>
 						
 					</div>
 					<div className='form-group'>
+						<textarea id='msg' className='form-control' rows='3' placeholder='Additional Info:'></textarea>
 					</div>
 					<button type='submit' className='btn btn-primary'>Submit</button>
 				</form>
