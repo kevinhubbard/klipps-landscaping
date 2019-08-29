@@ -8,9 +8,9 @@ import './styles/main.css'
 class Main extends Component {
 	render() {
 		return  <div id='main'>
+					<Gallery/>
 					<About/>
 					<Contact/>
-					<Gallery/>
 				</div>
 	}
 }

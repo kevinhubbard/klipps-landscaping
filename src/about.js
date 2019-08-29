@@ -6,8 +6,8 @@ const services = ['Lawn mowing', 'Tree trimming', 'Weeding or Fertilizing', 'Lan
 class About extends Component {
 	render() {
 		return  <div id='about'>
-					<h3 className='aboutContent'>About Us</h3>
-					<p className='aboutContent'>We are a full service landscaping company, conveniently located in Old Bridge NJ. We are able to carry out any task you need. Wether it be 
+					<h4>Let us sculpt your dream yard!</h4>
+					<p>We are a full service landscaping company, conveniently located in Old Bridge NJ. We are able to carry out any task you need. Wether it be 
 					<ul className="services">
 						{services.map((service, i) =>
 							<li key='i'>{service}</li>)}

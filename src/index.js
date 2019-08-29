@@ -5,17 +5,14 @@ import Main from './main'
 import Footer from './footer.js'
 import 'bootstrap/dist/css/bootstrap.css'
 import './styles/index.css'
+import background from './images/back.jpg'
 
 
 class App extends Component {
 	render() {
 		return  <div>
-					<div className='wrapper'>
-						<Navbar/>
-						<Main/>
-						<div className='push'></div>
-						
-					</div>
+					<Navbar/>
+					<Main/>
 					<Footer/>
 				</div>
 	}
