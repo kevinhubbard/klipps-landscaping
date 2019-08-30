@@ -37,4 +37,12 @@ html{
 	#carouselExampleIndicators{
 		width: 90%;
 		height: auto;	}
+
+	.nave{
+		background-size: 100% 100%;
+		background-attachment: fixed;
+		height: 100px;
+	}
+
+
 }
