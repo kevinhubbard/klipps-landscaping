@@ -18,3 +18,23 @@ html{
 #test{
 	display: inline-block;
 }
+
+@media only screen and (max-width: 750px) {
+
+	#about{
+		width: 90%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	#contact{
+		width: 90%;
+		height: auto;
+		border-radius: 10px;
+
+	}
+
+	#carouselExampleIndicators{
+		width: 90%;
+		height: auto;	}
+}
