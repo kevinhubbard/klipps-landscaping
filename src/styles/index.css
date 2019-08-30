@@ -15,10 +15,6 @@ html{
 	display: inline-block;
 }
 
-#test{
-	display: inline-block;
-}
-
 @media only screen and (max-width: 750px) {
 
 	#about{
@@ -41,8 +37,10 @@ html{
 	.nave{
 		background-size: 100% 100%;
 		background-attachment: fixed;
-		height: 100px;
+		
+
 	}
+
 
 
 }
