@@ -2,14 +2,46 @@ import React, {Component} from 'react'
 import './styles/contact.css'
 
 class Contact extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			name: '',
+			email: '',
+			msg: ''
+		};
+
+		this.handleChange = this.handleChange.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
+	handleChange(event) {
+		this.setState({ [event.target.name]: event.target.value});
+	}
+
+	handleSubmit(event) {
+		event.preventDefault();
+		fetch('/', {
+			method: 'POST',
+			body: JSON.stringify({
+				name: this.state.name,
+				email: this.state.email,
+				msg: this.state.msg
+			}),
+			headers: { "Content-type": "application/json"}
+		});
+
+		console.log(`${this.state.name} ${this.state.email} ${this.state.msg}`)
+	}
+
 	render() {
-		return  <form id='contact'>
+		return  <form id='contact' onSubmit={this.handleSubmit}>
 					<h4>Contact Us</h4>
 					<div className='form-group'>
-						<input type='text' className='form-control' id='name' placeholder='Name:'></input>
+						<input type='text' className='form-control' id='name' name='name' placeholder='Name:' onChange={this.handleChange}></input>
 					</div>
 					<div className='form-group'>
-						<input type='text' className='form-control' id='email' placeholder='Email:'></input>
+						<input type='text' className='form-control' id='email' name='email' placeholder='Email:' onChange={this.handleChange}></input>
 					</div>
 					
 					<div className='form-check form-check-inline'>
@@ -27,9 +59,9 @@ class Contact extends Component {
 						
 					</div>
 					<div className='form-group'>
-						<textarea id='msg' className='form-control' rows='3' placeholder='Additional Info:'></textarea>
+						<textarea id='msg' className='form-control' name='msg' rows='3' placeholder='Additional Info:' onChange={this.handleChange}></textarea>
 					</div>
-					<button type='submit' className='btn btn-primary'>Submit</button>
+					<input className='btn btn-primary' type='submit' value='submit'/>
 				</form>
 	}
 }
