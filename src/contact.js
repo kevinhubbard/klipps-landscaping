@@ -31,7 +31,11 @@ class Contact extends Component {
 			headers: { "Content-type": "application/json"}
 		});
 
-		console.log(`${this.state.name} ${this.state.email} ${this.state.msg}`)
+		alert(`Thank you ${this.state.name}! We will respond accordingly.`);
+
+		document.getElementById('name').value='';
+		document.getElementById('email').value='';
+		document.getElementById('msg').value='';
 	}
 
 	render() {
