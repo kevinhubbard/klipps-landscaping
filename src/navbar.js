@@ -4,11 +4,9 @@ import logo from './images/logo.png'
 
 class Navbar extends Component {
 	render() {
-		return <div className='nave'>
-					<nav>
-						<h2 id='logo'><img src={logo} />Klipps Landscaping</h2>
-					</nav>
-				</div>
+		return <nav>
+					<h2><img src={logo}/>Klipps Landscaping</h2>
+				</nav>
 	}
 }
 

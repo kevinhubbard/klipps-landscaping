@@ -65,7 +65,7 @@ class Contact extends Component {
 					<div className='form-group'>
 						<textarea id='msg' className='form-control' name='msg' rows='3' placeholder='Additional Info:' onChange={this.handleChange}></textarea>
 					</div>
-					<input className='btn btn-primary' type='submit' value='submit'/>
+					<input className='btn btn-primary' type='submit' value='Submit'/>
 				</form>
 	}
 }
