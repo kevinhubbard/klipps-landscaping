@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "webpack --mode production --watch"
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC"
